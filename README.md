@@ -1,1 +1,3 @@
 # Recipe-Finder
+
+Recipe Finder was created to help tackle the issue of food waste. Food waste is a significant problem that is contributing to Climate Change. This waste ends up landfills that produces methance, a greenhouse gas. After in-depth research, I realized that helping household know what to eat with their available food materials would help reduce the throwing out of these materials and most importantly food waste. Many households end up wasting food because they have ingredients that are nearing their expiration dates or leftovers that they are unsure how to use. The recipe finder can suggest recipes to utilize these ingredients effectively, enabling people to make use of what they already have and reducing food waste.
