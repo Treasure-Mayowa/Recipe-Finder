@@ -3,14 +3,10 @@
 const apikey = API_KEY
 const recipe = document.querySelector("#Recipe")
 const form = document.querySelector("form")
-function submit() {
-    var input = document.getElementById("input");
-    var ingred = input.split(", ").trim()
-    input.innerHTML = ""
-}
+const search = document.getElementById("input")
 const ingredients = ""
 
-const getRecipe = async(ingredient) => {
+const getRecipe = async (ingredient) => {
     recipe.innerHTML = `<h2> Loading... <h2>`
     const url = `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apikey}&ingredients=${ingredients}`
     const response = await fetch(url);
@@ -34,6 +30,7 @@ const showWeather = (data) => {
     `
 }
 
+// Check for form submission
 form.addEventListener(
     "submit",
     function(event) {
