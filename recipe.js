@@ -11,10 +11,10 @@ const getRecipe = async (ingredient) => {
     const url = `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apikey}&ingredients=${ingredients}`
     const response = await fetch(url);
     const data = await response.json()
-    return showWeather(data)
+    return showRecipe(data)
 }
 
-const showWeather = (data) => {
+const showRecipe = (data) => {
     if (data.cod == "404") {
         weather.innerHTML = `<h2>Recipe does not exist in our database<h2>`
         return;
@@ -34,7 +34,7 @@ const showWeather = (data) => {
 form.addEventListener(
     "submit",
     function(event) {
-        getWeather(search.value)
+        getRecipe(search.value)
         event.preventDefault();
     }
 )
