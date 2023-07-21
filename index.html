@@ -6,8 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    </head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <header>
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="/src/Recipe-Finder-Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Recipe Finder
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-item nav-link" href="#">Other Resources</a>
+            </div>
+          </div>
+        </nav>
+      </header>
     <br><br><br><br><br><br>
     <body class="container">
         <h1>Reciper Finder</h1>
@@ -22,7 +42,7 @@
         </h4>
         <div id="entry">
             <p>Simple enter in your available ingredients seperated by a comma (,)</p>
-            <form>
+            <form class="form-control mr-sm-2">
                 <input type="text" name="q" id="input" placeholder="E.g egg, tomato...">
                 <br /> <br />
                 <button id="submit" onclick="submit()" type="button" class="btn btn-info">
