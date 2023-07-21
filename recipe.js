@@ -1,9 +1,9 @@
-// const website ="https://spoonacular.com/food-api/docs#Search-Recipes-by-Ingredients"
+// const website = "https://spoonacular.com/food-api/docs#Search-Recipes-by-Ingredients"
 
 const apikey = API_KEY
 const recipe = document.querySelector("#Recipe")
 const form = document.querySelector("form")
-const search = document.getElementById("input")
+const search =  document.getElementById("input")
 const ingredients = ""
 
 const getRecipe = async (ingredient) => {
