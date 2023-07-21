@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Finder</title>
+        <meta title="Recipe Finder">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">        
+      </head>
+      <header>
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="/src/Recipe-Finder-Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Recipe Finder
+          </a>
+        </nav>
+      </header>
+    <br><br><br><br><br><br>
+    <body class="container">
+        <h1>Reciper Finder</h1>
+        <h5>By <a href="https://linkedin.com/treasure-mayowa/">Treasure Mayowa</a></h5>
+        <br/>
+        <h2>About Us</h2>
+        <h4>Recipe Finder was created to help tackle the issue of food waste. Food waste is a significant
+            problem that is contributing to Climate Change. This waste ends up pile that release greenhouse
+            gases. After in-depth research, I discovered that helping household know what to eat with their 
+            available food materials would help reduce the throwing out of these materials and most importantly
+            food waste.
+        </h4>
+        <div id="entry">
+            <p>Simple enter in your available ingredients seperated by a comma (,)</p>
+            <form class="form-control mr-sm-2">
+                <input type="text" name="q" id="input" placeholder="E.g egg, tomato...">
+                <br /> <br />
+                <button id="submit" onclick="submit()" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-search"></span> Search
+                </button>
+            </form>
+      </div>
+      <button class="accordion">About Recipe Finder</button>
+        <div class="panel">
+        <p>Recipe Finder is a web app that helps user generate food recipes based on available ingredients. 
+           Simply type in the ingredients seperated with a comma</p>
+        </div>
+
+      <button class="accordion">Section 2</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+
+      <button class="accordion">Section 3</button>
+      <div class="panel">
+        <p>Lorem ipsum...</p>
+      </div>
+        <script src="recipe.js"></script>
+    </body>
+</html>
