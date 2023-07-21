@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Recipe Finder</title>
         <meta title="Recipe Finder">
@@ -28,18 +28,21 @@
       </header>
     <body class="container-fluid">
       <div id="entry">
-        <h2>Reciper Finder</h2>
-            <p>Simply enter in your available ingredients seperated by a comma (,)</p>
+        <h2>Recipe Finder</h2>
+            <h5>Simply enter in your available ingredients seperated by a comma (,)</h5>
+            <br><br><br>
             <form class="form-control mr-sm-2">
                 <input type="text" id="input" placeholder="E.g egg, tomato..." class="form-control-lg ">
                 <br> <br>
-                <button type="submit" onclick="submit()" value="Search" class="btn btn-info">
+                <button type="submit" onclick="search()" value="Search" class="btn btn-info">
                     <span class="glyphicon glyphicon-search">Search</span>
                 </button>
             </form>
       </div>
       <br> <br>
-      <div class="card" style="width: 18rem;">
+      
+      <h2 style="display:hidden;">Results</h2>
+      <div class="card" style="width: 18rem;" id="results">
         <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -47,7 +50,7 @@
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-            <script src="recipe.js"></script>
+        <script src="recipe.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
