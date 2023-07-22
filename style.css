@@ -1,6 +1,9 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter;
 }
+body a {
+  text-decoration: inherit;
+}
 body h2, body h4 {
   color: #F4C524;
   text-align: center;
@@ -45,4 +48,6 @@ body form button {
   background-color: white;
   display: none;
   overflow: hidden;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
