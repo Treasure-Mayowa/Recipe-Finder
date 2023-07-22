@@ -1,7 +1,7 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter;
 }
-body h2 {
+body h2, body h4 {
   color: #F4C524;
   text-align: center;
 }

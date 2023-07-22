@@ -23,7 +23,7 @@ const form = document.querySelector("form")
 
 function showRecipe(data) {
   if (data.length === 0){
-    result.innerHTML = `<h4> No match found in our database </h4>`
+    result.innerHTML = `<h4 style="color:red;"> No match found in our database </h4>`
     return
   }
 
