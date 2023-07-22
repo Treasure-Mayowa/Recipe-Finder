@@ -30,40 +30,83 @@
           </div>
         </nav>
       </header>
-    <body class="container>
+    <body class="container-fluid">
         <br>
         <h2>About Recipe Finder</h2>
-        <p style="text-align: center;">Recipe Finder was created to help tackle the issue of food waste. Food waste is a significant
-            problem that is contributing to Climate Change. This waste ends up pile that release greenhouse
-            gases. After in-depth research, I discovered that helping household know what to eat with their 
-            available food materials would help reduce the throwing out of these materials and most importantly
-            food waste.
+        <p style="text-align: center;">Recipe Finder was born out of the need to address the critical issue of food waste, which is a major contributor to climate change. The disposal of unused food leads to the release of harmful greenhouse gases, further exacerbating the environmental crisis.
+
+          Through extensive research, I discovered a solution. By guiding households on what to cook with ingredients at hand, we can significantly decrease the amount of food being discarded and, in turn, reduce food waste.
         </p>
+        <br><br>
         <div id="stats">
           <h4 style="text-align: center;">Statistics</h4>
+          <ul class="list-group">
+            <a href="https://www.theworldcounts.com/challenges/people-and-poverty/hunger-and-obesity/food-waste-statistics#:~:text=Roughly%20a%20third%20of%20the,world%20is%20lost%20or%20wasted."><li class="list-group-item">1/3 of the world's food is wasted which is about 1.3 million tonnes of food</li></a><br>
+            <a href="https://www.theguardian.com/environment/2022/jan/20/uk-food-waste-dont-know-what-to-cook"><li class="list-group-item">Consumers don't know what to cook leading to high food wastage</li></a><br>
+            <a href="https://www.iberdrola.com/sustainability/food-waste"><li class="list-group-item">Food waste alone is responsible for about 10% of global greenhouse emission</li></a><br>
+          </ul>
         </div>
+        <br><br>
+        <h4>Demo</h4>
         <div id="video">
           <iframe href="https://www.youtube.com/watch?v=N6-Hc2srBrc"></iframe>
         </div>
-      <button class="accordion">About Recipe Finder</button>
-        <div class="panel">
-        <p>Recipe Finder is a web app that helps user generate food recipes based on available ingredients. 
-           Simply type in the ingredients seperated with a comma</p>
+        <br><br>
+        <h4>FAQs</h4>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is Recipe Finder?
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Recipe Finder is a web application that allows users to search for recipes using the ingredients. This was to help reduce food waste and its environmental impacts as households can now figure out how to use ingredients instead of throwing them out.</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How does it work?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Simply type in your available ingredients into the search bar seperating them with a comma</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How can I reduce food waste and be more sustainable?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+              <ul>
+                <li>Use the Recipe Finder to plan you meals using your available ingredients</li>
+                <li>Buy food you can eat</li>
+                <li>Store food appropriately</li>
+                <li>Compost</li>
+                <li>Keep your eyes our for our "Other Resources" Page</li>
+              </ul>  
+              </div>
+            </div>
+          </div>
         </div>
-
-      <button class="accordion">Section 2</button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
-
-      <button class="accordion">Section 3</button>
-      <div class="panel">
-        <p>Lorem ipsum...</p>
-      </div>
         <script src="recipe.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
-    <footer><h5>By <a href="https://linkedin.com/treasure-mayowa/">Treasure Mayowa</a></h5></footer>
+    <br><br><br><br>
+    <footer style="text-align:center;"><p>Copyright 2023| By <a href="https://linkedin.com/treasure-mayowa/">Treasure Mayowa</a></p></footer>
 </html>
