@@ -21,6 +21,8 @@ const form = document.querySelector("form")
     return data  
 }
 
+
+// Display api return value
 function showRecipe(data) {
   if (data.length === 0){
     result.innerHTML = `<h4 style="color:red;"> No match found in our database </h4>`
@@ -43,8 +45,8 @@ function showRecipe(data) {
 // Check for form submission
 form.addEventListener("submit", function(event) {
         event.preventDefault();
-        const search =  document.getElementById("input").value
-        showRecipe(getRecipe(search.toLowerCase()))
+        const search =  document.getElementById("input").value.toLowerCase()
+        showRecipe(getRecipe(search))
     }
 )
 
