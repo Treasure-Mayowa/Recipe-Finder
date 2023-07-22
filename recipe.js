@@ -7,7 +7,7 @@ const form = document.querySelector("form")
 
 // Cleaning user input and then making request to the API
  async function getRecipe(value){
-    result.innerHTML = `<h2>Loading...</h2>`
+    result.innerHTML = `<h4>Loading...</h4>`
 
     const valueArray = value.split(",")
 
