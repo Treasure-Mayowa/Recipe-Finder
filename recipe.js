@@ -38,7 +38,6 @@ function showRecipe(dataPromise) {
             <h5 class="card-title">${data[i]["title"]}</h5>
           </div><br>`;
     }
-
     result.innerHTML = html += "</div>";
   });
 }
