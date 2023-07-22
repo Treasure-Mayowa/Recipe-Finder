@@ -30,20 +30,17 @@ function showRecipe(dataPromise) {
       return;
     }
 
-    let html = '';
+    let html = '<div class="card" style="width: 18rem;">';
     for (let i = 0; i < data.length; i++) {
       html += `
-        <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="${data[i]["image"]}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">${data[i]["title"]}</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>`;
+          </div>`;
     }
 
-    result.innerHTML = html;
+    result.innerHTML = html += "</div>";
   });
 }
 
