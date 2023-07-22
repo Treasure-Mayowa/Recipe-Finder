@@ -3,37 +3,50 @@
 const apikey = '9041fdff59e7495ba9ae0d5607683c20'
 const result = document.querySelector("#results")
 const form = document.querySelector("form")
-const search =  document.getElementById("input").value
 
 
-// Check for form submission
-form.addEventListener(
-    "submit",
-    function(event) {
-        getRecipe(search)
-    }
-)
-
-function getRecipe(value){
+// Cleaning user input and then making request to the API
+ async function getRecipe(value){
     result.innerHTML = `<h2>Loading...</h2>`
 
-    var valueArray = value.split(",");
+    const valueArray = value.split(",")
 
-    var trimmedArray = valueArray.map((ingredient) => ingredient.trim());
+    const trimmedArray = valueArray.map((ingredient) => ingredient.trim())
 
-    const value = trimmedArray.join(",");
+    const newValue = trimmedArray.join(",")
 
-    
-
-    result.innerHTML = `
-    <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    `
+    const url = `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apikey}&ingredients=${newValue}`
+    const response = await fetch(url)
+    const data = await response.json()  
+    return data  
 }
+
+function showRecipe(data) {
+  if (data.length === 0){
+    result.innerHTML = `<h4> No match found in our database </h4>`
+    return
+  }
+
+  for (let i = 0; i < data.length; i++){
+      result.innerHTML += 
+        `<div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="${data[i]["image"]}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">${data[i]["title"]}</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>`
+  }
+}
+
+// Check for form submission
+form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const search =  document.getElementById("input").value
+        showRecipe(getRecipe(search.toLowerCase()))
+    }
+)
 
 
 var acc = document.getElementsByClassName("accordion");
