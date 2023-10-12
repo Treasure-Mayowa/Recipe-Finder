@@ -49,5 +49,8 @@ body form button {
   display: none;
   overflow: hidden;
 }
-
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  }
 /*# sourceMappingURL=style.css.map */
